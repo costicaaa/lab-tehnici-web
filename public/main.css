@@ -28,6 +28,18 @@ body {
     float: right;
 }
 
+.fa-angry:hover, .fa-times:hover {
+    cursor: pointer;
+}
+.fa-angry{
+    color:red
+}
+.fa-times{
+    color: #ff8f00;
+}
+.fa-award {
+    color: green;
+}
 
 @media(max-width: 768px) {
     .my-center-container-title {

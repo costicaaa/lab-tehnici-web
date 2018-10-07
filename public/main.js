@@ -16,8 +16,18 @@ function listTodos() {
                             <td>${todo.id}</td>
                             <td>${todo.title}</td>
                             <td>${todo.desc}</td>
-                        </tr>
                     `;
+                if(todo.status === 1)
+                {
+                    table_contents += `<td><i  class="fas fa-award"></i></td>`
+                }
+                else
+                {
+                    table_contents += `<td><i onclick="completeTodo(${todo.id})" class="fas fa-angry"></i></td>`;
+                }
+
+                table_contents += `<td><i onclick="deleteTodo(${todo.id})"  class="fas fa-times"></i></td>`;
+                table_contents +=  `</tr>`;
             }
             setTableData("todos_table", table_contents);
         })
@@ -35,6 +45,7 @@ function setTableData(element_id, content) {
                     <td>Title</td>
                     <td>Description</td>
                     <td>Status</td>
+                    <td>Actions</td>
                 </tr>
             </thead>
             <tbody>`;
@@ -71,6 +82,7 @@ function addTodo(){
     })
         .then((response) => response.json()) // Transform the data into json
         .then((data) => {
+            alert("Todo saved! ");
             listTodos();
         })
         .catch((error) => {
@@ -81,6 +93,51 @@ function addTodo(){
 }
 
 function completeTodo(id){
-    console.log(id);
-    alert('aaa');
+    let data = {
+        todo_id: id,
+    };
+
+    fetch(FETCH_URL, {
+        method: "put",
+        body: JSON.stringify(data),
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+
+    })
+        .then((response) => response.json()) // Transform the data into json
+        .then((data) => {
+            alert("Status updated ! ");
+            listTodos();
+        })
+        .catch((error) => {
+            console.log(error);
+            alert("Trying nasty stuff, huh ?");
+        });
+}
+
+function deleteTodo(id){
+    let data = {
+        todo_id: id,
+    };
+
+    fetch(FETCH_URL, {
+        method: "DELETE", // fun stuff, works with DELETE but not delete !
+        body: JSON.stringify(data),
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+
+    })
+        .then((response) => response.json()) // Transform the data into json
+        .then((data) => {
+            alert("Todo Deleted ! ");
+            listTodos();
+        })
+        .catch((error) => {
+            console.log(error);
+            alert("Trying nasty stuff, huh ?");
+        });
 }

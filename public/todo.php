@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <link href="main.css?v=<? echo time() ?>" rel="stylesheet">
 
 </head>
@@ -35,19 +37,7 @@
     <br>
     <br>
     <div class="table" id="todos_table">
-        <table>
-            <thead>
-                <tr>
-                    <td>Id</td>
-                    <td>Title</td>
-                    <td>Description</td>
-                    <td>Status</td>
-                </tr>
-            </thead>
-            <tbody>
 
-            </tbody>
-        </table>
 
     </div>
 </div>
