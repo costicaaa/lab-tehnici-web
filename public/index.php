@@ -21,7 +21,8 @@
 
 <div class="my-wrapper-container">
         <h6>
-            This is another ToDo app example.
+            This is another
+            <a href="/todo.php">ToDo</a> app example.
         </h6>
     <p>
         Unlike the usual demos, in this example we are not going to use something new and awesome, we are going to re-invent the wheel, as per <span class="my-bold">requirements</span>.
@@ -38,8 +39,6 @@
         <p> Group 353</p>
     </div>
 </div>
-
-
 
 </body>
 </html>
