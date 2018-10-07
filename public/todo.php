@@ -31,7 +31,7 @@
         <label for="desc">Description</label>
         <input id="desc">
         <br>
-        <button onclick="addTodo()" type="button" id="submit_form">Add !</button>
+        <button onclick="addTodo()" class="my-button" type="button" id="submit_form">Add !</button>
     </form>
 
     <br>
