@@ -15,21 +15,29 @@
 <br>
 <br>
 <div class="my-center-container-title">
-    <h3 class="cici">Web Project</h3>
+    <h1 >Web Project</h1>
 </div>
 <hr>
 
 <div class="my-wrapper-container">
-        <h6>
-            This is another
-            <a href="/todo.php">ToDo</a> app example.
-        </h6>
     <p>
-        Unlike the usual demos, in this example we are not going to use something new and awesome, we are going to re-invent the wheel, as per <span class="my-bold"><a href="https://github.com/WebToLearn/laborator-tehnici-web">requirements</a></span>.
+        This is another
+        <a href="/todo.php">ToDo</a> app example.
     </p>
+    <br>
     <p>
-        In this project, only plain css and vanilla js will  be used.
+        Unlike the usual demos, in this example we are not going to use something new and awesome, we are going to
+        re-invent the wheel, as per <span class="my-bold"><a href="https://github.com/WebToLearn/laborator-tehnici-web">requirements</a></span>.
     </p>
+
+    <br>
+    <br>
+    <p>
+        In this project, only plain css and vanilla js will be used.
+    </p>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>

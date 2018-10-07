@@ -16,14 +16,13 @@
 <br>
 <br>
 <br>
-<div class="my-center-container-title">
-    <h3 class="">Web Project</h3>
-</div>
-<hr>
 
-<div class="my-wrapper-container">
+<div class="my-wrapper-container-todo my-wrapper-container-todo-add">
     <form>
-        <h4>Add ToDo</h4>
+        <h1>ToDos</h1>
+        <br>
+        <br>
+        <br>
         <label for="title">Title</label>
         <input id="title">
         <br>
@@ -34,11 +33,9 @@
         <button onclick="addTodo()" class="my-button" type="button" id="submit_form">Add !</button>
     </form>
 
-    <br>
-    <br>
+</div>
+<div class="my-wrapper-container-todo my-wrapper-container-table ">
     <div class="table" id="todos_table">
-
-
     </div>
 </div>
 <script src="/main.js?v=<? echo time() ?>"></script>
