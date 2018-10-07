@@ -20,11 +20,26 @@
 <hr>
 
 <div class="my-wrapper-container">
-        <p>
-            This is another to-do app example. This time, we do not have anything 2018ish , we only have plain css and
-            vanilla js -- <span class="my-bold">requirements</span> !
-        </p>
+        <h6>
+            This is another ToDo app example.
+        </h6>
+    <p>
+        Unlike the usual demos, in this example we are not going to use something new and awesome, we are going to re-invent the wheel, as per <span class="my-bold">requirements</span>.
+    </p>
+    <p>
+        In this project, only plain css and vanilla js will  be used.
+    </p>
+    <br>
+    <br>
+    <br>
+
+    <div class="my-right-float">
+        <p> Costin Costache</p>
+        <p> Group 353</p>
+    </div>
 </div>
+
+
 
 </body>
 </html>

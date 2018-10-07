@@ -24,6 +24,10 @@ body {
     font-weight: bold;
 }
 
+.my-right-float{
+    float: right;
+}
+
 
 @media(max-width: 768px) {
     .my-center-container-title {
