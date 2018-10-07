@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="54966078-ef94-4d8f-b3a0-c3403beae6e9" name="cweb.develop.eiddew.com" url="http://cweb.develop.eiddew.com">
+        <fileTransfer host="cweb.develop.eiddew.com" port="22" rootFolder="/home/cwebhome/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
