@@ -14,10 +14,16 @@
 <br>
 <br>
 <br>
-<div class="my-center-container">
+<div class="my-center-container-title">
     <h3 class="cici">Web Project</h3>
+</div>
+<hr>
 
-
+<div class="my-wrapper-container">
+        <p>
+            This is another to-do app example. This time, we do not have anything 2018ish , we only have plain css and
+            vanilla js -- <span class="my-bold">requirements</span> !
+        </p>
 </div>
 
 </body>
